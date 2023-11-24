@@ -21,17 +21,29 @@
 function isSubsequence(str1, str2) {
    console.log("original str1:", str1)
    console.log("original str2:", str2)
+
+    let idxStr1 = 0;
+    let idxStr2 = 0; 
+
     if(str2 < str1) return false; 
+    // if (!str1) return true;
 
-    for(let char of str1) {
-        console.log("char:", char)
-    //     console.log("str1[char]:", str1[char])
-    //     console.log("str[char]:", str2[char])
-    //    if(str1[char] !== str2[char]) return false; 
+    while(idxStr2 < str2.length) {
+        // looping through str2 
+
+        if(str1[idxStr1] === str2[idxStr2]) {
+            // if value of str1 idx1 os equal to value then we move our idx1 up by one
+            idxStr1 += 1; 
+        }
+        // of odxStr 1 = str1.length we have looped through all of str1 and return true
+        if (idxStr1 === str1.length) return true;
+        // otherwise increase idxStr2 to see if value matches str1 
+        idxStr2 += 1;
     }
-
-
+        return false;
 }
+
+
 
 
 // ! note order matters but chars dont have to be next to eachother

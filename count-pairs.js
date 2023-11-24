@@ -52,7 +52,7 @@ function countPairs(arr, int) {
 
 
 
-// A set in JavaScript is a collection of unique values. This means that each value can only occur once in the set. Sets are ordered, meaning that the elements of a set can be iterated through in the insertion order. Sets can store any type of value, whether primitive or objects.
+// A set in JavaScript is a collection of unique values. This means that each value can only occur once in the set. Sets are ordered, meaning that the elements of a set can be iterated through in the insertion order. Sets can store any type of value, whether primitive or objects. The reason why this works is we can delete, check if values there, and iterate through the set. 
 
 
 function countPairs2(arr, num) {
